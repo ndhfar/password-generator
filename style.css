@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --WHITE: #f9efdb;
+  --GREEN: #597e52;
+  --BROWN: #c6a969;
+  --TRANSPARENT: transparent;
+}
+
+/* Body */
+body {
+  background-color: var(--WHITE);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.title {
+  margin-bottom: 13px;
+  color: var(--GREEN);
+  text-align: center;
+}
+
+/* Container Password */
+.cont-password {
+  background-color: var(--BROWN);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px 16px 26px;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 0 grey;
+}
+
+.random-password {
+  background-color: var(--TRANSPARENT);
+  width: 100%;
+  padding-right: 7px;
+  border: none;
+  outline: none;
+  color: var(--WHITE);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.random-password::placeholder {
+  color: var(--WHITE);
+}
+
+.bx-copy {
+  color: var(--WHITE);
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Generate Button */
+.generate-btn {
+  background-color: var(--GREEN);
+  padding: 14px 24px;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--WHITE);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.scaled {
+  transform: scale(0.95);
+}
